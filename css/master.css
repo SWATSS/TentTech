@@ -1,0 +1,269 @@
+:root {
+	--main-color: #fd1d1d;
+	--second-color: #fcb045;
+	--bg-color: rgb(243, 243, 243);
+	--liner-color-background: linear-gradient(
+		219deg,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	overflow-x: hidden;
+	height: 100vh;
+}
+html {
+	scroll-behavior: smooth;
+}
+.container {
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* mobile */
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+/* medium */
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* large */
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+.header {
+	margin-top: 1vh;
+}
+.header .container {
+	width: 80%;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin: auto;
+	height: 68px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.header .container a img {
+	height: 88px;
+	border-radius: 50px;
+	margin-right: 50px;
+}
+
+.nav {
+	padding: 10px;
+}
+.nav ul {
+	display: flex;
+}
+.nav ul li {
+	padding: 50px;
+}
+.nav ul li a {
+	color: white;
+}
+
+.home {
+	padding: 30px 60px;
+	position: relative;
+}
+.home img {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	border-radius: 10px;
+}
+.home .img::after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	border: 27px solid;
+	border-color: transparent black transparent transparent;
+	top: 50%;
+	left: 13%;
+	border-radius: 11px;
+}
+.home .img::before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	border: 27px solid;
+	border-color: transparent transparent transparent black;
+	top: 50%;
+	right: 13%;
+	border-radius: 11px;
+}
+.h-special {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+}
+.h-special::after {
+	content: "";
+	position: absolute;
+	width: 250px;
+	border: 5px solid;
+	border-color: #852525 white #852525 #852525;
+	bottom: -10px;
+	border-radius: 5px;
+	left: 0;
+}
+.sp-cards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.sp-cards .card {
+	border-radius: 10px;
+	width: 30%;
+	height: 30vh;
+	padding: 10px;
+}
+.sp-cards .card img {
+	width: 90%;
+	height: 90%;
+}
+.sp-cards .card p {
+	padding: 10px;
+}
+.sp-cards .card-dt {
+	font-size: 17px;
+	font-weight: bold;
+}
+.sp-cards .card-pc {
+	font-size: 13px;
+	font-weight: bold;
+}
+.sp-cards .sale {
+	margin-left: 10px;
+	color: #777;
+}
+.card {
+	position: relative;
+}
+.card .add {
+	position: absolute;
+	background-color: #fea000;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 11px;
+	right: 10px;
+	color: white;
+}
+.special {
+	margin-bottom: 200px;
+}
+.special .sp-cards > .card::after {
+	content: "";
+	position: relative;
+	width: 10px;
+	background-color: #fcb045;
+}
+.recent {
+	background-color: #1b1a18;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+.recent .rec {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.rec a img {
+	width: 200px;
+}
+.rec {
+	position: relative;
+}
+.rec::after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	border: 15px solid;
+	border-color: transparent transparent transparent white;
+	top: 24%;
+	right: -25px;
+	border-radius: 5px;
+}
+.rec::before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	border: 15px solid;
+	border-color: transparent white transparent transparent;
+	top: 24%;
+	left: -25px;
+	border-radius: 5px;
+}
+.footer p:not(:last-child) {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #777;
+	position: relative;
+}
+.foot .f-after::after {
+	content: "";
+	position: absolute;
+	width: 90%;
+	border: 1.5px solid #99171779;
+	bottom: -10px;
+	left: 0;
+	border-radius: 5px;
+}
+.footer ul li {
+	margin-bottom: 4px;
+	color: #777777b2;
+	font-size: 13px;
+}
+.foot {
+	display: flex;
+	justify-content: space-between;
+}
+.footer {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.powerd {
+	background-color: #1b1a18;
+	padding: 15px;
+}
+.powerd .container {
+	display: flex;
+	justify-content: space-between;
+}
+.powerd ul a {
+	padding-right: 10px;
+}
